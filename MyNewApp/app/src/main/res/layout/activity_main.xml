@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="@string/x_string" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/x_string"
+        android:layout_alignTop="@+id/y_string"
+        android:layout_toLeftOf="@+id/goButton"
+        android:layout_toStartOf="@+id/goButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/GoButton"
+        android:id="@+id/goButton"
+        android:layout_marginTop="105dp"
+        android:clickable="true"
+        android:contentDescription="@android:string/ok"
+        android:enabled="true"
+        android:importantForAccessibility="yes"
+        android:labelFor="@color/button_material_dark"
+        android:longClickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/y_string"
+        android:id="@+id/y_string"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/z_string"
+        android:id="@+id/z_string"
+        android:layout_below="@+id/genDirection"
+        android:layout_toRightOf="@+id/goButton"
+        android:layout_toEndOf="@+id/goButton" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/genDirection"
+        android:layout_below="@+id/goButton"
+        android:layout_marginTop="31dp"
+        android:layout_above="@+id/y_string"
+        android:layout_alignRight="@+id/z_string"
+        android:layout_alignEnd="@id/z_string"
+        android:layout_alignStart="@id/x_string"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

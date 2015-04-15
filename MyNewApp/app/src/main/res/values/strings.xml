@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyNewApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="hoi_world">Hola world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="GoButton">GoWalk!</string>
+    <string name="numSteps">\"0\"</string>
+    <string name="x_string">0</string>
+    <string name="y_string">0</string>
+    <string name="z_string">0</string>
+</resources>
